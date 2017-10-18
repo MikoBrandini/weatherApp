@@ -1,7 +1,7 @@
 import axios from 'axios';
 import config from '../config.js';
 
-const ROOT_URL = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?appid=${config.API_KEY}`
+const ROOT_URL = `http://cors-proxy.htmldriven.com/?url=http://api.openweathermap.org/data/2.5/forecast?appid=${config.API_KEY}`
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
