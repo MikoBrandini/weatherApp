@@ -3,7 +3,7 @@ class NavBar extends Component {
   render(){
     return(
       <nav>
-        <h1>Miko's Weather App</h1>
+          <h3 className="navText center-align">Miko's Weather App</h3>
       </nav>
       )
   }

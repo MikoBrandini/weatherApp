@@ -12,13 +12,11 @@ class WeatherList extends Component {
     console.log(cityData.list)
 
     return (
-      <div  key={name} className="card horizontal">
-         <div className="card-stacked">
+      <div className="cityContainer" key={name}>
         <div className="card-content">
         <GoogleMap lon={lon} lat={lat} />
-        <Chart className="tempInfo" data={temps} color="orange" units="°F" />
+        <Chart className="tempInfo" data={temps} color="#9708CC " units="°F" />
 
-        </div>
         </div>
       </div>
       );
@@ -26,7 +24,7 @@ class WeatherList extends Component {
 
   render() {
     return(
-       <div className="col s12">
+       <div>
 
         { this.props.weather.map(this.renderWeather) }
 

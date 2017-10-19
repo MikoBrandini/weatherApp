@@ -11,14 +11,14 @@ return (kel-273.15)*1.8+32
 }
 
 export default (props) => {
-  const kelvinAverage= average(props.data)
+  let kelvinAverage= average(props.data)
   return (
       <span>
-          <Sparklines data={props.data}>
+          <Sparklines data={props.data} >
           <SparklinesLine color={props.color} />
           <SparklinesReferenceLine type="avg" />
           </Sparklines>
-          <span>{Math.round(kelToFaren(kelvinAverage))} {props.units}</span>
+          <div>The average temperature for these next five days will be {Math.round(kelToFaren(kelvinAverage))} {props.units}</div>
       </span>
     );
 }

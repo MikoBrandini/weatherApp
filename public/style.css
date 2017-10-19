@@ -1,13 +1,22 @@
 
+nav{
+  display: inline-block;
+  height: 100%;
+}
+
 .card-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 
 }
 
 .card-image, svg {
   min-height: 20vh;
   min-width: 20vh;
+}
+.cityContainer{
+  margin-top: 5px;
 }
 
 nav {
