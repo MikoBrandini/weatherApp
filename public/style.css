@@ -1,20 +1,15 @@
-td, th {
-  vertical-align: middle !important;
-  text-align: center !important;
+
+.card-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
 }
 
-.input-group {
-  margin: 20px 0px;
+.card-image, svg {
+  min-height: 20vh;
+  min-width: 20vh;
 }
 
-svg {
-  height: 150px;
-}
-
-td:first-of-type, td:first-of-type >div {
-  height: 200px;
-  width: 250px;
-}
 nav {
 background-image: -webkit-linear-gradient(top left, #43CBFF 0%, #9708CC 100%);
 background-image: -o-linear-gradient(top left, #43CBFF 0%, #9708CC 100%);

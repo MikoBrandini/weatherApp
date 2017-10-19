@@ -13,7 +13,7 @@ new window.google.maps.Map(this.refs.map, {
   }
 
   render() {
-    return <div ref="map" />;
+  return <div className="card-image" ref="map">  ></div>;
   }
 
 }

@@ -6,14 +6,19 @@ function average(data) {
   return _.round(_.sum(data)/data.length)
 }
 
+function kelToFaren(kel){
+return (kel-273.15)*1.8+32
+}
+
 export default (props) => {
+  const kelvinAverage= average(props.data)
   return (
-      <div>
-          <Sparklines svgHeight={120} svgWidth={100} data={props.data}>
+      <span>
+          <Sparklines data={props.data}>
           <SparklinesLine color={props.color} />
           <SparklinesReferenceLine type="avg" />
           </Sparklines>
-          <div>{average(props.data)} {props.units}</div>
-      </div>
+          <span>{Math.round(kelToFaren(kelvinAverage))} {props.units}</span>
+      </span>
     );
 }
